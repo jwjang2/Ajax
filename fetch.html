@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<article>
+		
+	</article>
+
+	<input type="button" value="fetch" name="" onclick="
+	
+		fetch('css').then(function(response) {
+			response.text().then(function(text) {
+				document.querySelector('article').innerHTML = text;
+			})
+		})		
+	
+		//Async(비동기 실행) 예제1  --->
+		// function callbackFun() {
+		// 	console.log('response end');
+		// }
+		// fetch('css').then(callbackFun);
+		// console.log(1);
+		// console.log(2);
+		// <--- 예제1
+
+		//Async(비동기 실행) 에제2 --->
+		// fetch('css').then(function(response) {
+		// 	if(response.status == 404) {
+		// 		alert('Not found');
+		// 	} else {
+		// 		console.log(response);
+		// 	}			
+		// });
+		// console.log(1);
+		// console.log(2);
+		// <--- 예제2
+
+	">
+</body>
+</html>
